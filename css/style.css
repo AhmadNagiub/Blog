@@ -1,0 +1,752 @@
+*
+{
+    box-sizing: border-box;
+
+}
+html,body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    font-family: 'lora' , serif;
+
+}
+/*to put start for a footer whatever header and footer 
+between them sections or no*/
+.page-wrapper2
+{
+    min-height: 20%;
+}
+h1,h2,h3,h4,h5,h6
+{
+    color: #444;
+    font-family: 'candal' , serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn
+{
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #006669;
+    color:#006669 ;
+    transition: all 1s;
+}
+.btn:hover
+{
+    background-color: #006669;
+    color: white;
+}
+
+.text-input
+{
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    line-height: 1.2rem;
+    color: #444;
+    font-family: 'lora' , serif;
+}
+.clearfix
+{
+    clear: both;
+    display: block;
+}
+/* start of nav bar*/
+header
+{
+    background-color: #008489;
+    height: 66px;
+}
+header .menu-toggle
+{
+    display: none;
+}
+header *
+{
+    color: white;
+}
+header .logo
+{
+    float: left;
+    height: inherit;
+    margin-left: 2rem;
+}
+header .logo-text
+{
+    margin: 9px;
+}
+header .logo-text span
+{
+    color: #70cfcf;
+    font-family: 'candal' , serif;
+}
+header ul
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li
+{
+    float: left;
+    position: relative;
+}
+header ul li ul
+{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 123;
+}
+header ul li:hover ul
+{
+    display: block;
+
+}
+
+header ul li ul li
+{
+    width: 100%;
+}
+header ul li ul li a
+{
+    padding: 10px;
+    color: #444;
+    background-color: white;
+    
+}
+header ul li ul li .log-out
+{
+    color: red;
+}
+
+header ul li a
+{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all .7s;
+    ;
+}
+header ul li a:hover
+{
+    background-color: #006669;
+    text-decoration: none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+
+
+/* end of nav bar*/
+
+
+/*start of post slider */
+
+
+.post-slider .title-slider
+{
+    text-align: center;
+    margin: 30px auto;
+    color: #444;
+    font-family: 'candal' , serif;
+}
+
+
+.post-slider .post-wrapper
+{
+    width: 84%;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.post-slider .prev
+{
+    position: absolute;
+    top: 60%;
+    left: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #006669;
+}
+.post-slider .next
+{
+    position: absolute;
+    top: 60%;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #006669;
+}
+
+.post-slider .post-wrapper .post
+{
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    background-color: #fff;
+    margin:0px 10px ;
+    box-shadow: 1rem 1rem 1rem -1rem #0a0a03;
+
+}
+.post-slider .post-wrapper .post .slider-image
+{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.post-slider .post-wrapper .post .post-info
+{
+    height: 130px;
+    padding: 0 5px;
+}
+.page-wrapper a:hover
+{
+    color: #006669;
+    text-decoration: none;
+}
+
+/*end of post slide */
+/*end of section */
+
+/*start of section*/
+#recent-posts
+{
+    width: 90%;
+    margin: 30px auto;
+
+}
+#recent-posts .main-content
+{
+    width: 70%;
+    float: left;
+}
+#recent-posts .main-content .posts
+{
+    width: 95%;
+    height: 275px;
+    margin:10px auto ;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+#recent-posts .main-content .posts .read-more
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#recent-posts .main-content .posts .post-img
+{
+    width: 40%;
+    height: 100% ;
+    float: left;
+}
+#recent-posts .main-content .posts .post-preview
+{
+    width: 60%;
+    float: right;
+    padding: 10px;
+}
+
+#recent-posts .main-content .recent-post-title
+{
+    margin: 20px;
+}
+
+
+#recent-posts .main-content h2
+{
+    font-family: 'candal' , serif;
+    color: #444;
+    margin: .25rem;
+    font-size: 2rem;
+    padding-top: .25rem;
+    padding-bottom: 1.2rem;
+}
+
+#recent-posts .main-content .posts .post-preview h2
+{
+    font-family: 'candal' , serif;
+    color: #444;
+    font-size: 1.3rem;
+}
+#recent-posts .main-content .posts .post-preview h2 a
+{
+    color: #444;
+    text-decoration: none;
+}
+
+
+
+#recent-posts .sidebar
+{
+    width: 30%;
+    float: left;
+}
+
+#recent-posts .sidebar .section
+{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#recent-posts .sidebar .section .section-title
+{
+    margin: 10px 0px;
+}
+#recent-posts .sidebar .section.search
+{
+    margin-top: 100px;
+}
+
+#recent-posts .sidebar  .topics ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0ee;
+}
+
+#recent-posts .sidebar  .topics ul li a
+{
+    padding: 15px 0px;
+    display: block;
+    border-top: 1px solid #e0e0ee;
+    text-decoration: none;
+    color: #444;
+    transition: padding-left .75s;
+
+}
+#recent-posts .sidebar  .topics ul li a:hover
+{
+    padding-left:20px ;
+    color: #006669;
+}
+
+
+/*end of section  */
+
+/*start of footer*/ 
+footer
+{
+    background-color: #303036;
+    height: 400px;
+    color: #d3d3d3;
+    position: relative;
+}
+footer .footer-contnet
+{
+    height: 350px;
+    display: flex;
+}
+footer .footer-contnet .footer-section
+{
+flex: 1;
+padding:25px ;
+}
+
+footer .footer-bottom
+{
+    background-color:#343a40 ;
+    color:#686868 ;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+footer .footer-contnet .about .contact span
+{
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1.1em;
+
+}
+footer .footer-contnet .about .socials a
+{
+    width: 45px;
+    height: 41px;
+    border: 1px solid white;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #008489;
+    transition: all .75s;
+}
+footer .footer-contnet .about .socials a:hover
+{
+    color: white;
+    border: 1px solid #008489;
+
+}
+footer .footer-contnet .links ul a 
+{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    transition: all .75s;
+    text-decoration: none;    
+    color: #05f7ff;
+
+}
+footer .footer-contnet .links ul a:hover
+{
+    margin-left: 15px;
+    color: white;
+}
+footer .footer-contnet .contact-form .contact-input
+{
+    background-color: #272727;
+    color: #bebdbd;
+    margin-bottom:10px ;
+    line-height: 1.5rem;
+    border: none;
+    padding: .9rem 1.4rem;
+}
+footer .footer-contnet .contact-form .contact-input:focus
+{
+    background-color: #1a1a1a;
+}
+footer .footer-contnet .contact-form button
+{
+    float: right;
+    font-family: 'lora' , serif;
+    font-size: 1.1em;
+}
+footer .footer-contnet .footer-section h2
+{
+    color: white;
+}
+footer .footer-contnet .footer-section h2 span
+{
+    color: #05f7ff;
+}
+
+
+/*end of footer*/
+
+/*Start of single page*/
+#recent-posts .main-content h2
+{
+    color: #444;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#recent-posts .main-content.single
+{
+    background-color: white;
+    font-size: 1.1em;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+#recent-posts .sidebar.single
+{
+    padding: 0px 10px;
+}
+#recent-posts .popular .post
+{
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#recent-posts .popular .post img
+{
+    height: 60px;
+    width: 75px;
+    float: left;
+    margin-right: 10px;
+}
+#recent-posts .popular .post a
+{
+    text-decoration: none;
+}
+#recent-posts .popular .post a h4:hover
+{
+    color: #70cfcf;
+}
+#recent-posts .popular .post a h4
+{
+    font-size: 1.1em;
+}
+
+/*end of single page*/
+
+/*start of register page and login page*/
+.auth-contnet
+{
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.auth-contnet .form-title
+{
+    text-align: center;
+}
+.auth-contnet form div
+{
+    margin-bottom: 10px;
+}
+.auth-contnet form button
+{
+    margin-bottom: 10px;
+}
+.auth-contnet form p
+{
+    text-align: center;
+}
+.auth-contnet form p a
+{
+    color: #cf5858;
+}
+.auth-contnet form p a:hover
+{
+    color: #2ebfe4;
+
+}
+/*message that show to the user*/
+.msg
+{
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    list-style: none;
+}
+.success
+{
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    background-color: #bcf5bc;
+}
+.error
+{
+    color: #884b4b;
+    border: 1px solid #884b4b;
+    background-color: #f5bcbc;  
+}
+/*message that show to the user*/
+/*end of register page  and login page*/
+
+/*media queries*/
+@media only screen and (max-width : 993px)
+{
+    #recent-posts
+    {
+        width: 100%;
+
+    }
+    #recent-posts .main-content
+    {
+        width: 100%;
+        padding: 10px;
+
+    }
+    #recent-posts .main-content .post
+    {
+        width: 100%;
+    }
+    #recent-posts .sidebar
+    {
+        width: 100%;
+        padding: 10px;
+
+    }
+    #recent-posts .sidebar .section.search
+    {
+        margin-top: 30px;
+    }
+    footer
+{
+    height: auto;
+
+    }
+    footer .footer-contnet
+    {
+    height: auto;
+    flex-direction: column;
+    }
+    footer .footer-contnet .footer-section
+    {
+    text-align: center;
+
+    }
+    footer .footer-contnet .links ul
+    {
+    list-style: none;
+    }
+
+    footer .footer-contnet .contact-form button
+    {
+        width: 100%;
+        margin-bottom: 3em;
+
+    }
+    .auth-contnet
+    {
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (max-width : 660px)
+{
+    #recent-posts .main-content .posts
+    {
+        height: auto ;
+
+    }
+    #recent-posts .main-content .posts .post-img
+    {
+    width: 100%;
+
+    }
+    #recent-posts .main-content .posts .post-preview
+    {
+    width: 100%;
+    text-align: center;
+
+    }
+    #recent-posts .main-content .posts .post-preview .read-more
+    {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    .post-slider .next
+    {
+        right: 10px;
+    
+    }
+    .post-slider .prev
+    {
+        left: 10px;
+    
+    }
+    #recent-posts .main-content.single
+    {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+    #recent-posts .main-content-wrapper 
+    {
+        padding: 10px;
+    }
+
+
+
+    .auth-contnet
+    {
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width : 957px)
+{
+    .post-slider .post-wrapper .post .post-info h4 a
+    {
+        font-size: .65em;
+        margin-bottom: 10px;
+
+    }
+    .post-slider .post-wrapper .post .slider-image
+{
+   
+    height: 180px;
+
+}
+
+
+}
+/* start of media query for nav*/
+@media only screen and (max-width : 750px)
+{
+   
+    header .logo
+    {
+        position: absolute;
+
+    }
+    header #nav
+    {
+        position: relative;
+        top: 50%;
+    }
+    .showing
+    {
+        display: none;
+    }
+    header .menu-toggle
+    {
+        display: inline-block;
+        position: relative;
+        left: 90%;
+        top: 20%;
+        font-size: 2rem;
+        cursor: pointer;
+
+
+    }
+    header ul
+    {
+        width: 100%;
+    }
+
+    header ul li
+    {
+        width: 100%;
+        background-color: lightblue;
+        
+    }
+    header ul li a
+    {
+        text-align: center;
+    }
+    header ul li ul li a
+    {
+        background-color: lightblue;
+
+    }
+    header ul li ul
+    {
+        width: 100%;
+    }
+    .auth-contnet
+    {
+        width: 60%;
+    }
+
+
+}
+/* end of media query for nav*/
